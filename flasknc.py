@@ -10,5 +10,5 @@ def connect():
     os.system(f'nc {target_ip} {port}')
     return f"Connecting to {target_ip}:{port}"
 
-if name == '__main__':
+if os.name == '__main__':
     app.run(port=8080)
